@@ -59,6 +59,10 @@ Client artwork sources:
 
 The two police marks and GENCO mark are separately sourced public reproductions, not downloads from the unavailable TGTS page. The use of the current TGTRANSCO mark is intentional; the brief uses its former TS TRANSCO name.
 
+## Related links
+
+The ten logos in `dist/assets/links/` are the original 168×75 images from the related-links strip on the TGTS homepage, https://tgts.telangana.gov.in/images/causes/scroll/ , retrieved unchanged on 6 October 2026 once the homepage became reachable again. Link targets follow that page where it set one (Telangana Tourism, UIDAI, DigiLocker, GOIR, RTI). It set no link for data.gov.in, India Code, the National Portal of India or Open Data Telangana, so those point to the official portals https://www.data.gov.in/ , https://www.indiacode.nic.in/ , https://www.india.gov.in/ and https://data.telangana.gov.in/ . The AP Reorganisation image has no link on the original page and is shown without one here.
+
 ## Footer map
 
 The footer now contains a live Google Maps iframe targeting HACA Bhavan, Nampally, Hyderabad, with map and directions links. This address matches the supplied brief and the published TGTS RTI document. The original homepage returned HTTP 502 when checked again; its exact iframe URL and the Secunderabad pin mentioned by the user could not be recovered. The embed is therefore a verified-address replacement, not a claim to reproduce that unavailable original pin. Google Maps supplies its own map data and attribution.

@@ -188,3 +188,20 @@ $$('[data-open-service]').forEach(link => link.addEventListener('click', () => {
   $$('.service').forEach((service, index) => service.open = index === Number(link.dataset.openService));
 }));
 $$('[data-resource]').forEach(link => link.addEventListener('click', () => showResources(link.dataset.resource)));
+
+// Related links: the arrows page through the scrollable logo list and wrap around at either end.
+const relatedList = $('#related-links-list');
+if (relatedList) {
+  const controls = $('.related-controls');
+  const syncRelatedControls = () => controls.hidden = relatedList.scrollWidth <= relatedList.clientWidth + 2;
+  $$('.related-arrow').forEach(arrow => arrow.addEventListener('click', () => {
+    const direction = Number(arrow.dataset.direction);
+    const end = relatedList.scrollWidth - relatedList.clientWidth;
+    const behavior = reducedMotion.matches || document.body.classList.contains('reduced-motion') ? 'auto' : 'smooth';
+    if (direction > 0 && relatedList.scrollLeft >= end - 2) relatedList.scrollTo({left: 0, behavior});
+    else if (direction < 0 && relatedList.scrollLeft <= 2) relatedList.scrollTo({left: end, behavior});
+    else relatedList.scrollBy({left: direction * relatedList.clientWidth * .8, behavior});
+  }));
+  addEventListener('resize', syncRelatedControls);
+  syncRelatedControls();
+}
