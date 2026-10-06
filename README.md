@@ -16,7 +16,7 @@ Open `dist/index.html` or deploy `dist/` to any static host. There are no build 
 - Keyboard-accessible resource tabs and modal dialogs
 - Higher contrast, text size and reduced motion controls
 - Contact form that prepares an email draft; no backend submission or stored enquiries
-- Related links strip with the ten government portal logos from the original TGTS homepage, with previous / next arrows
+- Related links strip with the ten government portal logos from the original TGTS homepage, scrolling continuously like the client logos, with the same pause and reduced-motion controls
 - Google Maps embedded directly in the footer, with location details and directions
 - Locally hosted photos and font
 
